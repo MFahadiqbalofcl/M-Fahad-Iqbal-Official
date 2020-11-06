@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-PK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="M Fahad Iqbal">
+    <meta name="Keywords" content="FISH GAME, Fish Game, fish game, fish moving around, html game, html and css game, html & css game">
+    <title>Link Finding Game</title>
+</head>
+<body>
+
+    <h1 align="center" style="background-color: lightgray; margin: 10px;">A game that's for you</h1>
+    <h2 align="center" style="text-decoration: underline;">What's the game?</h2>
+    <ol>
+        <li>
+            Stop the fish at the end of the border and fin a link? ( you have just 10 chances)
+        </li>
+        <li>
+        stop the circle that's moving zigzag and then find a link?
+        </li>
+        <li>Stop the spiral and find a link?</li>
+    </ol>
+    <header style="margin: 10px; border: 2px solid black;">
+    <marquee behavior="scroll" loop="10" alt="Animal Game" onmouseover="stop()" onmouseout="start()" scrollamount="400ms">
+       <img src="./Animal Game/fish-swimming.gif" usemap="#fish" title="Let's find a link">
+       <map name="fish">
+           <area shape="rect" href="Prize.html" target="_blank" style="cursor: default" coords="13,10,23,19" alt="fish-swimming">
+       </map>
+    </marquee>
+
+    <marquee direction="down" behavior="alternate"  scrollamount="400ms" onmouseover="stop()" onmouseout="start()">
+        <marquee behavior="alternate">
+        <img src="./Animal Game/Circle.png" usemap="#barq" title="Let's find a link" >
+        <map name="barq">
+            <area shape="rect" coords="2,104,6,111" target="_blank" href="Prize.html" style="cursor: default;">
+        </map>
+    </marquee>
+</header>
+
+    <marquee scrollamount="100ms" onmouseover="stop()" onmouseout="start()">
+        <img src="./Animal Game/Spiral.gif" usemap="#spiral" title="Let's find a link" >
+        <map name="spiral">
+            <area shape="rect" coords="64,428,74,439" target="_blank" href="Prize.html" style="cursor: default;">
+        </map>
+    </marquee>
+
+</body>
+</html>
